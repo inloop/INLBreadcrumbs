@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "INLBreadcrumbs"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "INLBreadcrumbs adds breadcrumbs to a UINavigationController"
   s.description  = "Adds breadcrumb navigation to a UINavigationController and enables pop to an arbitrary View Controller from the title view"
   s.homepage     = "https://github.com/inloop/INLBreadcrumbs"
