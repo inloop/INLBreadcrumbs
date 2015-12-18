@@ -16,7 +16,7 @@
 
 +(id)viewWithClass:(Class)class fromNibNamed:(NSString *)nibName {	
 	NSObject * nibItem = nil;
-	NSEnumerator * nibEnumerator = [[[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil] objectEnumerator];
+	NSEnumerator * nibEnumerator = [[[NSBundle bundleForClass:class] loadNibNamed:nibName owner:self options:nil] objectEnumerator];
 	
 	while ((nibItem = [nibEnumerator nextObject]) != nil) {
 		if ([nibItem isKindOfClass:class]) {
