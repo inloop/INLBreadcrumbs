@@ -11,6 +11,7 @@
 #import "INLNavbarTitleView.h"
 #import "INLBreadcrumbManager.h"
 #import "UIView+INLViewWithClass.h"
+#import "MethodSwizzler.h"
 
 @implementation INLBreadcrumb
 
@@ -23,21 +24,15 @@
 }
 
 +(instancetype)breadcrumbWithController:(UIViewController<INLBreadcrumbCompatibleController> *)controller manager:(INLBreadcrumbManager *)manager {
-	return [[INLBreadcrumb alloc] initWithController:controller manager:manager];
+	return [[INLBreadcrumb alloc] initWithController:controller manager:manager ? manager : [INLBreadcrumbManager defaultManager]];
 }
 
 -(instancetype)initWithController:(UIViewController<INLBreadcrumbCompatibleController> *)controller manager:(INLBreadcrumbManager *)manager {
 	if (self = [super init]) {
-		if (![controller isKindOfClass:[UIViewController class]]) {
-			@throw [NSException exceptionWithName:@"Unexpected class"
-										   reason:@"Breadcrumb controller must be a subclass of UIViewController"
-										 userInfo:nil];
-		}
-		
 		self.controller = controller;
 		self.manager = manager;
-		self.cancelButtonTitle = @"Cancel";
-		self.breadcrumbIndicator = @" ▾";
+		self.cancelButtonTitle = manager.cancelButtonTitle ? manager.cancelButtonTitle : @"Cancel";
+		self.breadcrumbIndicator = manager.breadcrumbIndicator ? manager.breadcrumbIndicator : @" ▾";
 		self.titleView = [UIView viewWithClass:[INLNavbarTitleView class]];
 		[self updateTitle];
 		
@@ -48,7 +43,6 @@
 	}
 	return self;
 }
-
 
 -(BOOL)isTopBreadcrumb {
 	return [self.manager breadcrumbs].count == 0 || [self.manager breadcrumbs][0].controller == self.controller;
@@ -94,6 +88,11 @@
 
 -(NSString *)title {
 	return self.controller.title;
+}
+
+-(void)setBreadcrumbIndicator:(NSString *)breadcrumbIndicator {
+	_breadcrumbIndicator = breadcrumbIndicator;
+	[self updateTitle];
 }
 
 @end

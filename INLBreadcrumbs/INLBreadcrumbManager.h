@@ -12,6 +12,9 @@
 
 @interface INLBreadcrumbManager : NSObject
 
+@property (strong, nonatomic) NSString * cancelButtonTitle;
+@property (strong, nonatomic) NSString * breadcrumbIndicator;
+
 +(instancetype)defaultManager;
 +(instancetype)managerForKey:(NSString *)key;
 

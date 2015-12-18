@@ -22,6 +22,8 @@
 -(instancetype)init {
 	if (self = [super init]) {
 		self.breadcrumbStack = [@[] mutableCopy];
+		self.cancelButtonTitle = nil;
+		self.breadcrumbIndicator = nil;
 	}
 	return self;
 }
