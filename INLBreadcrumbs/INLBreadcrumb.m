@@ -67,6 +67,9 @@
 	popup.popoverPresentationController.sourceRect = CGRectMake(0, 0,
 																self.controller.navigationItem.titleView.frame.size.width,
 																self.controller.navigationItem.titleView.frame.size.height);
+
+	[popup setAssociatedProperty:@selector(setupBreadcrumbs) value:@YES];
+
 	[self.controller presentViewController:popup animated:YES completion:nil];
 }
 

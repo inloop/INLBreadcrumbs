@@ -31,7 +31,10 @@
 @implementation UIViewController (INLBreadcrumbs)
 
 +(void)setupBreadcrumbs {
-	replaceMethodImplementations([self class], @selector(didMoveToParentViewController:), @selector(inl_didMoveToParentViewController:));
+	[self replaceMethodImplementation:@selector(didMoveToParentViewController:)
+								 with:@selector(inl_didMoveToParentViewController:)];
+	[self replaceMethodImplementation:@selector(viewWillTransitionToSize:withTransitionCoordinator:)
+								 with:@selector(inl_viewWillTransitionToSize:withTransitionCoordinator:)];
 }
 
 -(void)inl_didMoveToParentViewController:(UIViewController *)parent {
@@ -45,6 +48,14 @@
 			[controller.breadcrumb.manager popBreadcrumb:controller.breadcrumb];
 		}
 		[controller.breadcrumb updateTitle];
+	}
+}
+
+-(void)inl_viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+	[self inl_viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+
+	if ([[self.presentedViewController associatedProperty:@selector(setupBreadcrumbs)] boolValue] == YES) {
+		[self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
 	}
 }
 
