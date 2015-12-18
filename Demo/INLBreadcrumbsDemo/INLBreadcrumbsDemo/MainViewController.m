@@ -11,13 +11,13 @@
 @interface MainViewController ()
 
 @property (strong, nonatomic) NSArray * data;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView * tableView;
 
 @end
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
 	[super viewDidLoad];
 	self.data = @[@"One", @"Two", @"Three", @"Four", @"Five"];
 	if (self.title == nil) {

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "INLBreadcrumbCompatibleController.h"
+#import "INLBreadcrumbs.h"
 
 @interface MainViewController : INLBreadcrumbViewController
 

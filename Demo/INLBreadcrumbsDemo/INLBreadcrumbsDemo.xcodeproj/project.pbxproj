@@ -104,13 +104,13 @@
 		C3B67F6A1C1F596100126BEC /* INLBreadcrumb */ = {
 			isa = PBXGroup;
 			children = (
+				C3B67F711C1F597400126BEC /* INLBreadcrumbs.h */,
 				C3B67F6B1C1F597400126BEC /* INLBreadcrumb.h */,
 				C3B67F6C1C1F597400126BEC /* INLBreadcrumb.m */,
 				C3B67F6D1C1F597400126BEC /* INLBreadcrumbCompatibleController.h */,
 				C3B67F6E1C1F597400126BEC /* INLBreadcrumbCompatibleController.m */,
 				C3B67F6F1C1F597400126BEC /* INLBreadcrumbManager.h */,
 				C3B67F701C1F597400126BEC /* INLBreadcrumbManager.m */,
-				C3B67F711C1F597400126BEC /* INLBreadcrumbs.h */,
 				C3B67F721C1F597400126BEC /* INLNavbarTitleView.h */,
 				C3B67F731C1F597400126BEC /* INLNavbarTitleView.m */,
 				C3B67F741C1F597400126BEC /* INLNavbarTitleView.xib */,
@@ -323,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = INLBreadcrumbsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = INL.INLBreadcrumbsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -334,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = INLBreadcrumbsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = INL.INLBreadcrumbsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +361,7 @@
 				C3B67F661C1F587D00126BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
