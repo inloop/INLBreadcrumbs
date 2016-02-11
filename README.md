@@ -3,7 +3,7 @@
 ## 1. Overview
 The `INLBreadcrumbs` library adds breadcrumbs to a `UINavigationController`. You can pop to an arbitrary view controller from the title view.
 
-<img src="https://raw.githubusercontent.com/inloop/INLBreadcrumbs/master/Demo/Screenshots/INLBreadcrumbs-iPhone.png" alt="RVBreadcrumbs iPhone screenshot" height="512" >            <img src="https://raw.githubusercontent.com/inloop/INLBreadcrumbs/master/Demo/Screenshots/INLBreadcrumbs-iPad.png" alt="RVBreadcrumbs iPad screenshot" height="512" >
+<img src="https://raw.githubusercontent.com/inloop/INLBreadcrumbs/master/Demo/Screenshots/breadcrumbs-iPhone.gif" alt="RVBreadcrumbs iPhone screenshot" height="400" >            <img src="https://raw.githubusercontent.com/inloop/INLBreadcrumbs/master/Demo/Screenshots/breadcrumbs-iPad.gif" alt="RVBreadcrumbs iPad screenshot" height="400" >
 
 ## 2. How to use
 There are two ways breadcrumbs can be added to your application:
