@@ -27,7 +27,7 @@ First, implement the `INLBreadcrumbCompatibleController` protocol and create a b
 @interface INLBreadcrumbViewController : UIViewController <INLBreadcrumbCompatibleController>
 @property (strong, nonatomic) INLBreadcrumb * breadcrumb;
 ```
-In the `+load` method and call the `setupBreadcrumbs` and in the `-viewDidLoad` initialise the breadcrumb property
+In the `+load` method call the `setupBreadcrumbs` and in the `-viewDidLoad` initialise the breadcrumb property
 ```objective-c
 #import "INLBreadcrumb.h"
 
@@ -45,9 +45,18 @@ In the `+load` method and call the `setupBreadcrumbs` and in the `-viewDidLoad` 
 ```
 
 ## 3. Multiple breadcrumb stacks
-You can have multiple breadcrumb stacks e.g. if you have several `UITabViewController` tabs or a modal transition - each should have a separate breadcrumb stack. You associate a breadcrumb with a breadcrumb stack by specifying a manager when creating the breadcrumb.
+You can have multiple breadcrumb stacks e.g. if you have several `UITabViewController` tabs or a modal transition - each should have a separate breadcrumb stack. You associate a breadcrumb with a breadcrumb stack by setting the manager property before `didMoveToParentViewController:` is called.
 ```objective-c
-[INLBreadcrumb breadcrumbWithController:self manager:[INLBreadcrumbManager managerForKey:@"stackId"]];
+-(void)viewDidLoad {
+	[super viewDidLoad];
+	
+	// If subclassing INLBreadcrumbViewController
+	self.breadcrumb.manager = [INLBreadcrumbManager managerForKey:@"stackId"]
+	
+	// If conforming to INLBreadcrumbCompatibleController
+	self.breadcrumb = [INLBreadcrumb breadcrumbWithController:self
+	                                                  manager:[INLBreadcrumbManager managerForKey:@"stackId"]];
+}
 ```
 If you don’t specify a manager the default manager is used.
 
