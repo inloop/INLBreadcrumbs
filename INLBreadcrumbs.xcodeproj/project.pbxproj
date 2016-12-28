@@ -7,39 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB62B241E1442EA00D37DE8 /* INLBreadcrumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB62B1F1E1442EA00D37DE8 /* INLBreadcrumb.swift */; };
+		4BB62B251E1442EA00D37DE8 /* INLBreadcrumbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB62B201E1442EA00D37DE8 /* INLBreadcrumbManager.swift */; };
+		4BB62B261E1442EA00D37DE8 /* INLBreadcrumbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB62B211E1442EA00D37DE8 /* INLBreadcrumbViewController.swift */; };
+		4BB62B271E1442EA00D37DE8 /* INLNavbarTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB62B221E1442EA00D37DE8 /* INLNavbarTitleView.swift */; };
+		4BB62B281E1442EA00D37DE8 /* INLNavbarTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB62B231E1442EA00D37DE8 /* INLNavbarTitleView.xib */; };
 		C355F75C1C0F06750068EC54 /* INLBreadcrumbs.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F75B1C0F06750068EC54 /* INLBreadcrumbs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C355F7711C0F06FC0068EC54 /* INLBreadcrumb.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F7631C0F06FC0068EC54 /* INLBreadcrumb.h */; };
-		C355F7721C0F06FC0068EC54 /* INLBreadcrumb.m in Sources */ = {isa = PBXBuildFile; fileRef = C355F7641C0F06FC0068EC54 /* INLBreadcrumb.m */; };
-		C355F7731C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F7651C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.h */; };
-		C355F7741C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C355F7661C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.m */; };
-		C355F7751C0F06FC0068EC54 /* INLBreadcrumbManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F7671C0F06FC0068EC54 /* INLBreadcrumbManager.h */; };
-		C355F7761C0F06FC0068EC54 /* INLBreadcrumbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C355F7681C0F06FC0068EC54 /* INLBreadcrumbManager.m */; };
-		C355F7771C0F06FC0068EC54 /* INLNavbarTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F7691C0F06FC0068EC54 /* INLNavbarTitleView.h */; };
-		C355F7781C0F06FC0068EC54 /* INLNavbarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C355F76A1C0F06FC0068EC54 /* INLNavbarTitleView.m */; };
-		C355F7791C0F06FC0068EC54 /* INLNavbarTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C355F76B1C0F06FC0068EC54 /* INLNavbarTitleView.xib */; };
-		C355F77A1C0F06FC0068EC54 /* MethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F76D1C0F06FC0068EC54 /* MethodSwizzler.h */; };
-		C355F77B1C0F06FC0068EC54 /* MethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = C355F76E1C0F06FC0068EC54 /* MethodSwizzler.m */; };
-		C355F77C1C0F06FC0068EC54 /* UIView+INLViewWithClass.h in Headers */ = {isa = PBXBuildFile; fileRef = C355F76F1C0F06FC0068EC54 /* UIView+INLViewWithClass.h */; };
-		C355F77D1C0F06FC0068EC54 /* UIView+INLViewWithClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C355F7701C0F06FC0068EC54 /* UIView+INLViewWithClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BB62B1F1E1442EA00D37DE8 /* INLBreadcrumb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INLBreadcrumb.swift; sourceTree = "<group>"; };
+		4BB62B201E1442EA00D37DE8 /* INLBreadcrumbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INLBreadcrumbManager.swift; sourceTree = "<group>"; };
+		4BB62B211E1442EA00D37DE8 /* INLBreadcrumbViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INLBreadcrumbViewController.swift; sourceTree = "<group>"; };
+		4BB62B221E1442EA00D37DE8 /* INLNavbarTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INLNavbarTitleView.swift; sourceTree = "<group>"; };
+		4BB62B231E1442EA00D37DE8 /* INLNavbarTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INLNavbarTitleView.xib; sourceTree = "<group>"; };
 		C355F7581C0F06750068EC54 /* INLBreadcrumbs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = INLBreadcrumbs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C355F75B1C0F06750068EC54 /* INLBreadcrumbs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INLBreadcrumbs.h; sourceTree = "<group>"; };
 		C355F75D1C0F06750068EC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C355F7631C0F06FC0068EC54 /* INLBreadcrumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INLBreadcrumb.h; sourceTree = "<group>"; };
-		C355F7641C0F06FC0068EC54 /* INLBreadcrumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INLBreadcrumb.m; sourceTree = "<group>"; };
-		C355F7651C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INLBreadcrumbCompatibleController.h; sourceTree = "<group>"; };
-		C355F7661C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INLBreadcrumbCompatibleController.m; sourceTree = "<group>"; };
-		C355F7671C0F06FC0068EC54 /* INLBreadcrumbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INLBreadcrumbManager.h; sourceTree = "<group>"; };
-		C355F7681C0F06FC0068EC54 /* INLBreadcrumbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INLBreadcrumbManager.m; sourceTree = "<group>"; };
-		C355F7691C0F06FC0068EC54 /* INLNavbarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INLNavbarTitleView.h; sourceTree = "<group>"; };
-		C355F76A1C0F06FC0068EC54 /* INLNavbarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INLNavbarTitleView.m; sourceTree = "<group>"; };
-		C355F76B1C0F06FC0068EC54 /* INLNavbarTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INLNavbarTitleView.xib; sourceTree = "<group>"; };
-		C355F76D1C0F06FC0068EC54 /* MethodSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzler.h; sourceTree = "<group>"; };
-		C355F76E1C0F06FC0068EC54 /* MethodSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzler.m; sourceTree = "<group>"; };
-		C355F76F1C0F06FC0068EC54 /* UIView+INLViewWithClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+INLViewWithClass.h"; sourceTree = "<group>"; };
-		C355F7701C0F06FC0068EC54 /* UIView+INLViewWithClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+INLViewWithClass.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,31 +56,15 @@
 		C355F75A1C0F06750068EC54 /* INLBreadcrumbs */ = {
 			isa = PBXGroup;
 			children = (
+				4BB62B1F1E1442EA00D37DE8 /* INLBreadcrumb.swift */,
+				4BB62B201E1442EA00D37DE8 /* INLBreadcrumbManager.swift */,
+				4BB62B211E1442EA00D37DE8 /* INLBreadcrumbViewController.swift */,
+				4BB62B221E1442EA00D37DE8 /* INLNavbarTitleView.swift */,
+				4BB62B231E1442EA00D37DE8 /* INLNavbarTitleView.xib */,
 				C355F75B1C0F06750068EC54 /* INLBreadcrumbs.h */,
-				C355F7631C0F06FC0068EC54 /* INLBreadcrumb.h */,
-				C355F7641C0F06FC0068EC54 /* INLBreadcrumb.m */,
-				C355F7651C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.h */,
-				C355F7661C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.m */,
-				C355F7671C0F06FC0068EC54 /* INLBreadcrumbManager.h */,
-				C355F7681C0F06FC0068EC54 /* INLBreadcrumbManager.m */,
-				C355F7691C0F06FC0068EC54 /* INLNavbarTitleView.h */,
-				C355F76A1C0F06FC0068EC54 /* INLNavbarTitleView.m */,
-				C355F76B1C0F06FC0068EC54 /* INLNavbarTitleView.xib */,
 				C355F75D1C0F06750068EC54 /* Info.plist */,
-				C355F76C1C0F06FC0068EC54 /* Util */,
 			);
 			path = INLBreadcrumbs;
-			sourceTree = "<group>";
-		};
-		C355F76C1C0F06FC0068EC54 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				C355F76D1C0F06FC0068EC54 /* MethodSwizzler.h */,
-				C355F76E1C0F06FC0068EC54 /* MethodSwizzler.m */,
-				C355F76F1C0F06FC0068EC54 /* UIView+INLViewWithClass.h */,
-				C355F7701C0F06FC0068EC54 /* UIView+INLViewWithClass.m */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C355F75C1C0F06750068EC54 /* INLBreadcrumbs.h in Headers */,
-				C355F7751C0F06FC0068EC54 /* INLBreadcrumbManager.h in Headers */,
-				C355F7771C0F06FC0068EC54 /* INLNavbarTitleView.h in Headers */,
-				C355F7731C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.h in Headers */,
-				C355F7711C0F06FC0068EC54 /* INLBreadcrumb.h in Headers */,
-				C355F77A1C0F06FC0068EC54 /* MethodSwizzler.h in Headers */,
-				C355F77C1C0F06FC0068EC54 /* UIView+INLViewWithClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +110,7 @@
 				TargetAttributes = {
 					C355F7571C0F06750068EC54 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -173,7 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C355F7791C0F06FC0068EC54 /* INLNavbarTitleView.xib in Resources */,
+				4BB62B281E1442EA00D37DE8 /* INLNavbarTitleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,12 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C355F7741C0F06FC0068EC54 /* INLBreadcrumbCompatibleController.m in Sources */,
-				C355F7781C0F06FC0068EC54 /* INLNavbarTitleView.m in Sources */,
-				C355F7721C0F06FC0068EC54 /* INLBreadcrumb.m in Sources */,
-				C355F7761C0F06FC0068EC54 /* INLBreadcrumbManager.m in Sources */,
-				C355F77D1C0F06FC0068EC54 /* UIView+INLViewWithClass.m in Sources */,
-				C355F77B1C0F06FC0068EC54 /* MethodSwizzler.m in Sources */,
+				4BB62B241E1442EA00D37DE8 /* INLBreadcrumb.swift in Sources */,
+				4BB62B251E1442EA00D37DE8 /* INLBreadcrumbManager.swift in Sources */,
+				4BB62B261E1442EA00D37DE8 /* INLBreadcrumbViewController.swift in Sources */,
+				4BB62B271E1442EA00D37DE8 /* INLNavbarTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +248,7 @@
 		C355F7611C0F06750068EC54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -298,12 +260,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = INL.INLBreadcrumbs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C355F7621C0F06750068EC54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -315,6 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = INL.INLBreadcrumbs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
